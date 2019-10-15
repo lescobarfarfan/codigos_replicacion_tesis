@@ -1,18 +1,18 @@
 # ==============================================================================
 # ==============================================================================
 # ==============================================================================
-# =============== Código para analizar las variables de los ajustes ============
+# =============== C?digo para analizar las variables de los ajustes ============
 # ==============================================================================
 # ==============================================================================
 # ==============================================================================
 
 
 # Directorio de trabajo.
-setwd('Z:/LuisEscobar/Clusters/PrinComp_K-Means/RandomForest/Junio2017/Datos_DobleEscala/')
+setwd('/Ruta/Usuario/')
 dir()
 
-# De igual forma, el código funciona para todos los objetos creados, sólo es
-# necesario modificar el nombre de los objetos que se están leyendo.
+# De igual forma, el c?digo funciona para todos los objetos creados, s?lo es
+# necesario modificar el nombre de los objetos que se est?n leyendo.
 
 
 # Librerias
@@ -42,7 +42,7 @@ AjusteRandomForest$datosAll
 AjusteRandomForest_VarImp <- AjusteRandomForest$ImportanciaVariables
 AjusteRandomForest_VarImp <- AjusteRandomForest_VarImp[, c(3, 2)]
 length(unique(AjusteRandomForest_VarImp$Conceptos))
-ruta_escritura <- 'Z:/LuisEscobar/Clusters/PrinComp_K-Means/RandomForest/Junio2017/PorGini/DobleEscala/'
+ruta_escritura <- '/Ruta/Usuario/'
 write.csv(AjusteRandomForest_VarImp,
           paste0(ruta_escritura, 'RKM_SinCol_Nivel1_VarImp_GINI.csv'),
           row.names = F)

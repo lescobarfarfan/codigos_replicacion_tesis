@@ -29,7 +29,7 @@ library(ggrepel)
 
 
 # Ruta al mapeo con nombres anonimos
-ruta_nombres_anon <- "G:/Tesis_Datos/Clusters_FKM_RKM/DatosDefinitivos/Mapeo_claves_bancos_con_nombre_anonimo.csv"
+ruta_nombres_anon <- "/Ruta/Usuario/Mapeo_claves_bancos_con_nombre_anonimo.csv"
 
 # Para cada ajuste por metodo/nivel/Con-SinCorrelacionadas obtendremos
 # una visualizacion solo de la ultima fecha.
@@ -43,7 +43,7 @@ mapeo$Institucion <- as.character(mapeo$Institucion)
 # Ajustes con FKM ---------------------------------------------------------
 
 # FKM N1
-load("G:/Tesis_Datos/Clusters_FKM_RKM/DatosDefinitivos/SoloBalance_DatosNotFull/FKM/ScaledPaperTRUE_ScaledFunctionFALSE_CenterFALSE/AjustesN1_ScaledPaperTRUE_ScaledFuncFALSE_Total_FKM_0.75_Datos-low.RData")
+load("/Ruta/Usuario/AjustesN1_ScaledPaperTRUE_ScaledFuncFALSE_Total_FKM_0.75_Datos-low.RData")
 
 Ajuste <- list_ajustesN1[[length(list_ajustesN1)]][[1]] %>% tbl_df()
 
@@ -62,7 +62,7 @@ legend("bottom", legend = levels(factor(Ajuste$Cluster)),
 rm(list = setdiff(ls(), "mapeo"))
 
 # FKM N1 Sin Colineales
-load("G:/Tesis_Datos/Clusters_FKM_RKM/DatosDefinitivos/SoloBalance_DatosNotFull/FKM/ScaledPaperTRUE_ScaledFunctionFALSE_CenterFALSE/AjustesN1_SinCol_ScaledPaperTRUE_ScaledFuncFALSE_Total_FKM_0.75_Datos-low.RData")
+load("/Ruta/Usuario/AjustesN1_SinCol_ScaledPaperTRUE_ScaledFuncFALSE_Total_FKM_0.75_Datos-low.RData")
 
 Ajuste <- list_ajustesN1_SinCol[[length(list_ajustesN1_SinCol)]][[1]] %>% tbl_df()
 
@@ -82,7 +82,7 @@ legend("bottom", legend = levels(factor(Ajuste$Cluster)),
 rm(list = setdiff(ls(), "mapeo"))
 
 # FKM N2
-load("G:/Tesis_Datos/Clusters_FKM_RKM/DatosDefinitivos/SoloBalance_DatosNotFull/FKM/ScaledPaperTRUE_ScaledFunctionFALSE_CenterFALSE/AjustesN2_ScaledPaperTRUE_ScaledFuncFALSE_Total_FKM_0.75_Datos-low.RData")
+load("/Ruta/Usuario/AjustesN2_ScaledPaperTRUE_ScaledFuncFALSE_Total_FKM_0.75_Datos-low.RData")
 
 Ajuste <- list_ajustesN2[[length(list_ajustesN2)]][[1]] %>% tbl_df()
 
@@ -102,7 +102,7 @@ legend("bottom", legend = levels(factor(Ajuste$Cluster)),
 rm(list = setdiff(ls(), "mapeo"))
 
 # FKM N2 Sin Col
-load("G:/Tesis_Datos/Clusters_FKM_RKM/DatosDefinitivos/SoloBalance_DatosNotFull/FKM/ScaledPaperTRUE_ScaledFunctionFALSE_CenterFALSE/AjustesN2_SinCol_ScaledPaperTRUE_ScaledFuncFALSE_Total_FKM_0.75_Datos-low.RData")
+load("/Ruta/Usuario/AjustesN2_SinCol_ScaledPaperTRUE_ScaledFuncFALSE_Total_FKM_0.75_Datos-low.RData")
 
 Ajuste <- list_ajustesN2_SinCol[[length(list_ajustesN2_SinCol)]][[1]] %>% tbl_df()
 
@@ -135,7 +135,7 @@ Ajuste %>%
 rm(list = setdiff(ls(), "mapeo"))
 
 # FKM N3
-load("G:/Tesis_Datos/Clusters_FKM_RKM/DatosDefinitivos/SoloBalance_DatosNotFull/FKM/ScaledPaperTRUE_ScaledFunctionFALSE_CenterFALSE/AjustesN3_ScaledPaperTRUE_ScaledFuncFALSE_Total_FKM_0.75_Datos-low.RData")
+load("/Ruta/Usuario/AjustesN3_ScaledPaperTRUE_ScaledFuncFALSE_Total_FKM_0.75_Datos-low.RData")
 
 Ajuste <- list_ajustesN3[[length(list_ajustesN3)]][[1]] %>% tbl_df()
 
@@ -167,7 +167,7 @@ rm(list = setdiff(ls(), "mapeo"))
 
 
 # FKM N3 SinCol
-load("G:/Tesis_Datos/Clusters_FKM_RKM/DatosDefinitivos/SoloBalance_DatosNotFull/FKM/ScaledPaperTRUE_ScaledFunctionFALSE_CenterFALSE/AjustesN3_SinCol_ScaledPaperTRUE_ScaledFuncFALSE_Total_FKM_0.75_Datos-low.RData")
+load("/Ruta/Usuario/AjustesN3_SinCol_ScaledPaperTRUE_ScaledFuncFALSE_Total_FKM_0.75_Datos-low.RData")
 
 Ajuste <- list_ajustesN3_SinCol[[length(list_ajustesN3_SinCol)]][[1]] %>% tbl_df()
 
@@ -206,7 +206,7 @@ rm(list = setdiff(ls(), "mapeo"))
 
 
 # RKM N1
-load("G:/Tesis_Datos/Clusters_FKM_RKM/DatosDefinitivos/SoloBalance_DatosNotFull/ScaledPaperTRUE_ScaledFunctionFALSE_CenterFALSE/AjustesN1_ScaledPaperTRUE_ScaledFuncFALSE_Total_RKM_0.75_Datos-low.RData")
+load("/Ruta/Usuario/AjustesN1_ScaledPaperTRUE_ScaledFuncFALSE_Total_RKM_0.75_Datos-low.RData")
 
 Ajuste <- list_ajustesN1[[length(list_ajustesN1)]][[1]] %>% tbl_df()
 
@@ -240,7 +240,7 @@ Ajuste %>%
 rm(list = setdiff(ls(), "mapeo"))
 
 # FKM N1 Sin Colineales
-load("G:/Tesis_Datos/Clusters_FKM_RKM/DatosDefinitivos/SoloBalance_DatosNotFull/ScaledPaperTRUE_ScaledFunctionFALSE_CenterFALSE/AjustesN1_SinCol_ScaledPaperTRUE_ScaledFuncFALSE_Total_RKM_0.75_Datos-low.RData")
+load("/Ruta/Usuario/AjustesN1_SinCol_ScaledPaperTRUE_ScaledFuncFALSE_Total_RKM_0.75_Datos-low.RData")
 
 Ajuste <- list_ajustesN1_SinCol[[length(list_ajustesN1_SinCol)]][[1]] %>% tbl_df()
 
@@ -274,7 +274,7 @@ Ajuste %>%
 rm(list = setdiff(ls(), "mapeo"))
 
 # FKM N2
-load("G:/Tesis_Datos/Clusters_FKM_RKM/DatosDefinitivos/SoloBalance_DatosNotFull/ScaledPaperTRUE_ScaledFunctionFALSE_CenterFALSE/AjustesN2_ScaledPaperTRUE_ScaledFuncFALSE_Total_RKM_0.75_Datos-low.RData")
+load("/Ruta/Usuario/AjustesN2_ScaledPaperTRUE_ScaledFuncFALSE_Total_RKM_0.75_Datos-low.RData")
 
 Ajuste <- list_ajustesN2[[length(list_ajustesN2)]][[1]] %>% tbl_df()
 
@@ -308,7 +308,7 @@ Ajuste %>%
 rm(list = setdiff(ls(), "mapeo"))
 
 # FKM N2 Sin Col
-load("G:/Tesis_Datos/Clusters_FKM_RKM/DatosDefinitivos/SoloBalance_DatosNotFull/ScaledPaperTRUE_ScaledFunctionFALSE_CenterFALSE/AjustesN2_SinCol_ScaledPaperTRUE_ScaledFuncFALSE_Total_RKM_0.75_Datos-low.RData")
+load("/Ruta/Usuario/AjustesN2_SinCol_ScaledPaperTRUE_ScaledFuncFALSE_Total_RKM_0.75_Datos-low.RData")
 
 Ajuste <- list_ajustesN2_SinCol[[length(list_ajustesN2_SinCol)]][[1]] %>% tbl_df()
 
@@ -341,7 +341,7 @@ Ajuste %>%
 rm(list = setdiff(ls(), "mapeo"))
 
 # FKM N3
-load("G:/Tesis_Datos/Clusters_FKM_RKM/DatosDefinitivos/SoloBalance_DatosNotFull/ScaledPaperTRUE_ScaledFunctionFALSE_CenterFALSE/AjustesN3_ScaledPaperTRUE_ScaledFuncFALSE_Total_RKM_0.75_Datos-low.RData")
+load("/Ruta/Usuario/AjustesN3_ScaledPaperTRUE_ScaledFuncFALSE_Total_RKM_0.75_Datos-low.RData")
 
 Ajuste <- list_ajustesN3[[length(list_ajustesN3)]][[1]] %>% tbl_df()
 
@@ -377,7 +377,7 @@ rm(list = setdiff(ls(), "mapeo"))
 
 
 # FKM N3 SinCol
-load("G:/Tesis_Datos/Clusters_FKM_RKM/DatosDefinitivos/SoloBalance_DatosNotFull/ScaledPaperTRUE_ScaledFunctionFALSE_CenterFALSE/AjustesN3_SinCol_ScaledPaperTRUE_ScaledFuncFALSE_Total_RKM_0.75_Datos-low.RData")
+load("/Ruta/Usuario/AjustesN3_SinCol_ScaledPaperTRUE_ScaledFuncFALSE_Total_RKM_0.75_Datos-low.RData")
 
 Ajuste <- list_ajustesN3_SinCol[[length(list_ajustesN3_SinCol)]][[1]] %>% tbl_df()
 

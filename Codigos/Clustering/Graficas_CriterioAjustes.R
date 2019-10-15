@@ -21,10 +21,10 @@ options(scipen = 999)
 # Directorios -------------------------------------------------------------
 
 # Ruta a los criterios de ajustes con FKM
-ruta_datos_fkm <- "/media/luis/LUISESCOBAR/Tesis_Datos/Clusters_FKM_RKM/DatosDefinitivos/SoloBalance_DatosNotFull/FKM/FKM_CriteriosAjuste.csv"
+ruta_datos_fkm <- "/Ruta/Del/Usuario/FKM_CriteriosAjuste.csv"
 
 # Ruta a los criterios de ajustes con RKM
-ruta_datos_rkm <- "/media/luis/LUISESCOBAR/Tesis_Datos/Clusters_FKM_RKM/DatosDefinitivos/SoloBalance_DatosNotFull/RKM_CriteriosAjuste.csv"
+ruta_datos_rkm <- "/Ruta/Del/Usuario/RKM_CriteriosAjuste.csv"
 
 
 

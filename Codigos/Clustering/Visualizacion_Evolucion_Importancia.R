@@ -19,15 +19,15 @@ library(Hmisc)
 
 # Directorios -------------------------------------------------------------
 
-ruta_datos_rkm_n1 <- "G:/Tesis_Datos/Clusters_FKM_RKM/DatosDefinitivos/Resultados_Version2_TodasFechas_RF/Evolucion_Importancia_Ajustes_SPT_SFF_CF/EvoImpoHist_RKM_N1_SinCol.csv"
+ruta_datos_rkm_n1 <- "/Ruta/Usuario/EvoImpoHist_RKM_N1_SinCol.csv"
 
 
-ruta_datos_rkm_n2 <- "G:/Tesis_Datos/Clusters_FKM_RKM/DatosDefinitivos/Resultados_Version2_TodasFechas_RF/Evolucion_Importancia_Ajustes_SPT_SFF_CF/EvoImpoHist_RKM_N2_SinCol.csv"
+ruta_datos_rkm_n2 <- "/Ruta/Usuario/EvoImpoHist_RKM_N2_SinCol.csv"
 
 
-ruta_datos_rkm_n3 <- "G:/Tesis_Datos/Clusters_FKM_RKM/DatosDefinitivos/Resultados_Version2_TodasFechas_RF/Evolucion_Importancia_Ajustes_SPT_SFF_CF/EvoImpoHist_RKM_N3_SinCol.csv"
+ruta_datos_rkm_n3 <- "/Ruta/Usuario/EvoImpoHist_RKM_N3_SinCol.csv"
 
-ruta_escritura <- "G:/Tesis_Datos/Clusters_FKM_RKM/DatosDefinitivos/Resultados_Version2_TodasFechas_RF/Evolucion_Importancia_Ajustes_SPT_SFF_CF/"
+ruta_escritura <- "/Ruta/Usuario/"
 
 
 # Procesamiento de datos --------------------------------------------------

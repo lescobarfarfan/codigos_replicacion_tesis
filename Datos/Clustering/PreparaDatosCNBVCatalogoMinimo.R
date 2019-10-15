@@ -11,7 +11,7 @@ options(scipen = 999)
 
 
 
-datos16 <- read_csv("C:/Users/K15523/Downloads/ParaRespaldar/CatalogoMinimoR01_40_2016.csv",
+datos16 <- read_csv("/Ruta/Usuario/CatalogoMinimoR01_40_2016.csv",
                     locale = locale(encoding = "ISO-8859-2"))
 
 
@@ -63,7 +63,7 @@ datos162 <- datos162 %>%
 
 
 
-datos17 <- read_csv("C:/Users/K15523/Downloads/ParaRespaldar/CatalogoMinimoR01_40_2017.csv",
+datos17 <- read_csv("/Ruta/Usuario/CatalogoMinimoR01_40_2017.csv",
                     locale = locale(encoding = "ISO-8859-2"))
 
 
@@ -113,7 +113,7 @@ datos172 <- datos172 %>%
 datos_totales <- data.table::rbindlist(l = list(datos162, datos172), fill = T)
 
 
-write_csv(x = datos_totales, path = "C:/Users/K15523/Desktop/Totales.csv", col_names = T)
+write_csv(x = datos_totales, path = "/Ruta/Usuario/Totales.csv", col_names = T)
 
 
 
@@ -127,7 +127,7 @@ write_csv(x = datos_totales, path = "C:/Users/K15523/Desktop/Totales.csv", col_n
 
 
 
-datos16 <- read_csv("C:/Users/K15523/Downloads/ParaRespaldar/CatalogoMinimoR01_40_2016.csv",
+datos16 <- read_csv("/Ruta/Usuario/CatalogoMinimoR01_40_2016.csv",
                     locale = locale(encoding = "ISO-8859-2"))
 
 
@@ -229,7 +229,7 @@ datos162 <- datos162 %>%
 
 
 
-datos17 <- read_csv("C:/Users/K15523/Downloads/ParaRespaldar/CatalogoMinimoR01_40_2017.csv",
+datos17 <- read_csv("/Ruta/Usuario/CatalogoMinimoR01_40_2017.csv",
                     locale = locale(encoding = "ISO-8859-2"))
 
 
@@ -339,4 +339,4 @@ datos172 <- datos172 %>%
 datos_totales <- data.table::rbindlist(l = list(datos162, datos172), fill = T)
 
 
-write_csv(x = datos_totales, path = "C:/Users/K15523/Desktop/Totales_Scaled.csv", col_names = T)
+write_csv(x = datos_totales, path = "/Ruta/Usuario/Totales_Scaled.csv", col_names = T)

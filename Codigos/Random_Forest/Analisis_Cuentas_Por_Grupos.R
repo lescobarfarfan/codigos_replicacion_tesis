@@ -16,11 +16,11 @@ library(gghighlight)
 
 # Directorios -------------------------------------------------------------
 
-rutaPrin <- "E:/Tesis_Datos/Clusters_FKM_RKM/DatosDefinitivos/Analisis_MedidasPorClusters_Ajustes_v2_TodasFechas/"
+rutaPrin <- "/Ruta/Usuario/"
 setwd(rutaPrin)
 
 
-rutaDatos_AjustesCluster <- "E:/Tesis_Datos/Clusters_FKM_RKM/DatosDefinitivos/SoloBalance/CriteriosTodosAjustes_RKM.xlsx"
+rutaDatos_AjustesCluster <- "/Ruta/Usuario/CriteriosTodosAjustes_RKM.xlsx"
 
 
 

@@ -10,7 +10,7 @@ parte_cadena_vec <- Vectorize(parte_cadena)
 
 
 
-ruta_datos <- "C:/Users/K15523/Desktop/Tesis/Datos_Definitivos/Clusters/Datos_Diferenciar_Grupo4_RKM_N2.csv"
+ruta_datos <- "/Ruta/Usuario/Datos_Diferenciar_Grupo4_RKM_N2.csv"
 
 
 datos <- ruta_datos %>%

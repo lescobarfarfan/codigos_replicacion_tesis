@@ -27,27 +27,27 @@ library(cowplot)
 
 # Directorios -------------------------------------------------------------
 
-ruta_agrupacion_rkm_n1 <- "E:/Tesis_Datos/Clusters_FKM_RKM/DatosDefinitivos/Resultados_Version2_TodasFechas_RF/Agrupaciones_Y_Datos_Balance/AjustesN1_SinCol_ScaledPaperTRUE_ScaledFuncFALSE_Total_RKM_0.75_Datos-low_Agrupaciones.csv"
+ruta_agrupacion_rkm_n1 <- "/Ruta/Usuario/Agrupaciones_Y_Datos_Balance/AjustesN1_SinCol_ScaledPaperTRUE_ScaledFuncFALSE_Total_RKM_0.75_Datos-low_Agrupaciones.csv"
 
-ruta_vars_imp_rkm_n1 <- "E:/Tesis_Datos/Clusters_FKM_RKM/DatosDefinitivos/Resultados_Version2_TodasFechas_RF/Evolucion_Importancia_Ajustes_SPT_SFF_CF/Cuentas_Mas_Importantes_RMK_N1_SinCol.csv"
-
-
-
-ruta_agrupacion_rkm_n2 <- "E:/Tesis_Datos/Clusters_FKM_RKM/DatosDefinitivos/Resultados_Version2_TodasFechas_RF/Agrupaciones_Y_Datos_Balance/AjustesN2_SinCol_ScaledPaperTRUE_ScaledFuncFALSE_Total_RKM_0.75_Datos-low_Agrupaciones.csv"
-
-ruta_vars_imp_rkm_n2 <- "E:/Tesis_Datos/Clusters_FKM_RKM/DatosDefinitivos/Resultados_Version2_TodasFechas_RF/Evolucion_Importancia_Ajustes_SPT_SFF_CF/Cuentas_Mas_Importantes_RMK_N2_SinCol.csv"
+ruta_vars_imp_rkm_n1 <- "/Ruta/Usuario/Cuentas_Mas_Importantes_RMK_N1_SinCol.csv"
 
 
 
-ruta_agrupacion_rkm_n3 <- "E:/Tesis_Datos/Clusters_FKM_RKM/DatosDefinitivos/Resultados_Version2_TodasFechas_RF/Agrupaciones_Y_Datos_Balance/AjustesN3_SinCol_ScaledPaperTRUE_ScaledFuncFALSE_Total_RKM_0.75_Datos-low_Agrupaciones.csv"
+ruta_agrupacion_rkm_n2 <- "/Ruta/Usuario/AjustesN2_SinCol_ScaledPaperTRUE_ScaledFuncFALSE_Total_RKM_0.75_Datos-low_Agrupaciones.csv"
 
-ruta_vars_imp_rkm_n3 <- "E:/Tesis_Datos/Clusters_FKM_RKM/DatosDefinitivos/Resultados_Version2_TodasFechas_RF/Evolucion_Importancia_Ajustes_SPT_SFF_CF/Cuentas_Mas_Importantes_RMK_N3_SinCol.csv"
+ruta_vars_imp_rkm_n2 <- "/Ruta/Usuario/Cuentas_Mas_Importantes_RMK_N2_SinCol.csv"
 
 
 
-ruta_datos_balance_escalados <- "C:/Users/K15523/Desktop/Tesis/Datos_DD/FKM_RKM/Datos/DatosTrimestrales/Total_Scaled.csv"
+ruta_agrupacion_rkm_n3 <- "/Ruta/Usuario/AjustesN3_SinCol_ScaledPaperTRUE_ScaledFuncFALSE_Total_RKM_0.75_Datos-low_Agrupaciones.csv"
 
-ruta_datos_balance_full <- "C:/Users/K15523/Desktop/Tesis/Datos_DD/FKM_RKM/Datos/DatosTrimestrales/Total.csv"
+ruta_vars_imp_rkm_n3 <- "/Ruta/Usuario/Cuentas_Mas_Importantes_RMK_N3_SinCol.csv"
+
+
+
+ruta_datos_balance_escalados <- "/Ruta/Usuario/Total_Scaled.csv"
+
+ruta_datos_balance_full <- "/Ruta/Usuario/Total.csv"
 
 
 
@@ -495,11 +495,11 @@ fechas <- datos_rkm_n1_escalados$Fecha %>% unique() %>% sort()
 
 
 
-ruta_importancia_n1 <- "E:/Tesis_Datos/Clusters_FKM_RKM/DatosDefinitivos/Resultados_Version2_TodasFechas_RF/Evolucion_Importancia_Ajustes_SPT_SFF_CF/EvoImpoHist_RKM_N1_SinCol.csv"
+ruta_importancia_n1 <- "/Ruta/Usuario/EvoImpoHist_RKM_N1_SinCol.csv"
 
-ruta_importancia_n2 <- "E:/Tesis_Datos/Clusters_FKM_RKM/DatosDefinitivos/Resultados_Version2_TodasFechas_RF/Evolucion_Importancia_Ajustes_SPT_SFF_CF/EvoImpoHist_RKM_N2_SinCol.csv"
+ruta_importancia_n2 <- "/Ruta/Usuario/EvoImpoHist_RKM_N2_SinCol.csv"
 
-ruta_importancia_n3 <- "E:/Tesis_Datos/Clusters_FKM_RKM/DatosDefinitivos/Resultados_Version2_TodasFechas_RF/Evolucion_Importancia_Ajustes_SPT_SFF_CF/EvoImpoHist_RKM_N3_SinCol.csv"
+ruta_importancia_n3 <- "/Ruta/Usuario/EvoImpoHist_RKM_N3_SinCol.csv"
 
 
 
@@ -694,7 +694,7 @@ cuantiles <- datos_escalados_ult_fecha_n2 %>%
     select(-Cluster_RKM_N2)
 
 
-# Obtenemos algo para ver qué onda con el grupo 4
+# Obtenemos algo para ver qu? onda con el grupo 4
 datos_escalados_ult_fecha_n2_gpo4 <- datos_escalados_ult_fecha_n2 %>%
     filter(Cluster_RKM_N2 == 4) %>%
     filter(Nombre %in% top10$Nombre)

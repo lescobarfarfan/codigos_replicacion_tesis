@@ -20,7 +20,7 @@ library(pbapply)
 library(lubridate)
 
 # Directorio
-rutaPrin <- "/home/luis/Desktop/StochasticBlockModels/"
+rutaPrin <- "/Ruta/Usuario/"
 
 # Directorio donde están los datos
 rutaDatos <- paste0(rutaPrin, "DatosSalida/RData/")

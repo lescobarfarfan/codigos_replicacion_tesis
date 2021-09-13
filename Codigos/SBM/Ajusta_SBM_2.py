@@ -312,8 +312,8 @@ for ar in tqdm(archivos):
     # =========== Ajuste de los Bloques Estocasticos ============
 
     # Primero, obtenemos los ajustes sin correccion de grado
-    ajustes_NDC = [gt.minimize_blockmodel_dl(red, deg_corr=False) for i in range(sims)]
-    ajustesSinDesc_NDC = [gt.minimize_blockmodel_dl(red_sinDesc, deg_corr=False) for i in range(sims)]
+    ajustes_NDC = [gt.minimize_blockmodel_dl(red, state_args=dict(deg_corr=False)) for i in range(sims)]
+    ajustesSinDesc_NDC = [gt.minimize_blockmodel_dl(red_sinDesc, state_args=dict(deg_corr=False)) for i in range(sims)]
 
     # Obtenemos el vector con la description lenght de cada ajuste para
     # seleccionar el mejor
@@ -395,8 +395,8 @@ for ar in tqdm(archivos):
     	
 
     # Ahora, hacemos los ajustes con correccion de grado
-    ajustes_DC = [gt.minimize_blockmodel_dl(red, deg_corr=True) for i in range(sims)]
-    ajustesSinDesc_DC = [gt.minimize_blockmodel_dl(red_sinDesc, deg_corr=True) for i in range(sims)]
+    ajustes_DC = [gt.minimize_blockmodel_dl(red, state_args=dict(deg_corr=True)) for i in range(sims)]
+    ajustesSinDesc_DC = [gt.minimize_blockmodel_dl(red_sinDesc, state_args=dict(deg_corr=True)) for i in range(sims)]
 
     # Obtenemos el mejor ajuste
     mdl_DC = list()
@@ -420,7 +420,7 @@ for ar in tqdm(archivos):
 
     # Graficamos solo si el ajuste nos devuelve al menos dos comunidades
     # distintas.
-    if best_DC.B > 1:
+    if best_DC.get_B() > 1:
         nombreSBM = "AjusteSBM_FULL_Layout1_DC_" + fecha + ".pdf"
         best_DC.draw(pos=l, vertex_halo=True,
                      vertex_halo_color="black",
@@ -444,7 +444,7 @@ for ar in tqdm(archivos):
 
     # De igual manera, sólo graficamos los ajustes sin nodos desconectados
     # si se encontró mas de una comunidad
-    if bestSinDesc_DC.B > 1:
+    if bestSinDesc_DC.get_B() > 1:
         nombreSBM = "AjusteSBM_SinDesc_Layout1_DC_" + fecha + ".pdf"
         bestSinDesc_DC.draw(pos=lSinDesc, vertex_halo=True,
                             vertex_halo_color="black",
